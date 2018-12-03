@@ -16,8 +16,10 @@ projetos, dentre outros serviços. Situada em Brasília, Distrito Federal."/>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/main.js"></script>
+    
 	<!-- Title -->
 	<title>AFN Engenharia</title>
 
@@ -43,7 +45,7 @@ projetos, dentre outros serviços. Situada em Brasília, Distrito Federal."/>
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#secContato">CONTATO</a></li>
                     </ul>
                 </div>
             </nav>
@@ -51,10 +53,48 @@ projetos, dentre outros serviços. Situada em Brasília, Distrito Federal."/>
     </div>
 
 <!-- SECTION -->
+<br><br><br><br><br><br><br><br> <!--Essa linha pode ser apagada, sua função é apenas simular um conteudo acima da seção de contato -->
 
+<!-- SECTION CONTATO -->
+<section id="secContato">
+    <h2 align="center">Contato</h1>
+    <form data-toggle="validator" role="form" id="myForm" name="myForm">
+        <div class="form-group">
+            <label for="inputName" class="control-label">Nome</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Digite o seu nome" required>
+            <div class="help-block with-errors"></div>
+        </div>
 
+        <div class="form-group">
+            <label for="inputEmail" class="control-label">E-mail</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Digite o seu email" data-error="Este e-mail é invalidado" required>
 
+            <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu e-mail com mais ninguém.</small>
+            <div class="help-block with-errors"></div>
+        </div>
 
+        <div class="form-group">
+            <label for="inputFone" class="control-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputFone" placeholder="Digite o seu telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" required onkeyup="mascara(this, mtel);">
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite aqui a sua mensagem"></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <div id="btnConta">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>        
+      </form>
+    
+</section>
+<footer>
+    
+</footer>
+</body>
 
 
 

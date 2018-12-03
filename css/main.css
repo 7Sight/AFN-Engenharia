@@ -127,3 +127,32 @@ nav ul li a:hover {
       }
  
 }
+
+/*Seção de contato */
+#secContato{
+      background-image: url(../img/contadosEdit.jpg);
+      background-color: #2f5498;
+      background-size: 100% 100%;
+      color: #fff;
+      padding: 1%;
+      
+}
+
+#emailHelp{
+      color: #fff;
+}
+
+.form-group{
+      width: 50%;
+}
+
+#btnConta{
+      align-items: center;
+}
+
+.list-unstyled {
+      color: yellow;
+}
+.has-error .control-label{
+      color: yellow;
+}
