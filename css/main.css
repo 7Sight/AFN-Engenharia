@@ -176,5 +176,21 @@ nav ul li a:hover {
       .carousel-inner {
             padding-top: 110px;
       }
-      
+}
+
+/* SEÇÃO SOBRE */
+
+.recuo{
+  text-indent:3em;
+}
+.imgbackground{
+background-image: url(../img/sobre2.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.cortexto{
+      color: white;
+}
+.textbold{
+      font-weight: bold;
 }
