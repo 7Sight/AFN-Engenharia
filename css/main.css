@@ -169,7 +169,29 @@ nav ul li a:hover {
             width: 100%;            
       }
 }
+/* FIM SEÇÃO DE CONTATOS */
 
+/* SEÇÃO DE RODAPE */
+
+#rodape{
+      background-color: #01539d;
+      color: #fff;
+      padding: 0.4%;
+}
+.flex-container {
+      display: flex;    
+      flex-direction: row;
+      justify-content: space-around;    
+      text-align: center;      
+    }
+@media(max-width: 786px){
+      .flex-container {
+            display: flex;    
+            flex-direction: column;            
+            text-align: center;
+          }
+}    
+/* FIM SEÇÃO DE RODAPE */
 
 /* CARROUSEL */
 
