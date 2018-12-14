@@ -164,6 +164,12 @@ nav ul li a:hover {
       padding-left: 5em;
 }
 
+@media(max-width: 900px){
+      .form-group{
+            width: 100%;            
+      }
+}
+
 
 /* CARROUSEL */
 
