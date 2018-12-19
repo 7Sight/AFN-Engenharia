@@ -29,15 +29,15 @@
 
 <!-- NAVBAR -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: rgba(255, 255, 255, 0.85);">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
 
 	<div class="container">
 	
-		<a class="navbar-brand h1 mb-0" href="#">
+		<a class="navbar-brand h1 mb-0" href="#carouselSite">
 			<img src="img/logo.png" style="width: 90px; height: 80px;">
 		</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
 
 			<span class="navbar-toggler-icon"></span>	
 
@@ -48,15 +48,15 @@
 			<ul class="navbar-nav ml-auto">
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">HOME</a>
+					<a class="nav-link" href="#carouselSite">HOME</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">SOBRE</a>
+					<a class="nav-link" href="#sobreSite">SOBRE</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">CONTATOS</a>
+					<a class="nav-link" href="#secContato">CONTATOS</a>
 				</li>
 
 			</ul>
@@ -120,21 +120,14 @@
 
 <!-- SECTION SOBRE -->
 
-<section class="imgbackground">
+<section class="imgbackground" id="sobreSite">
   <div class="container">
     <h2 class="py-4 text-center textbold cortexto">Sobre</h2>
-    <p class="lead cortexto recuo">Podemos já vislumbrar o modo pelo qual a necessidade de renovação processual auxília a preparação e a composição do remanejamento dos quadros funcionais. Podemos já vislumbrar o modo pelo qual a necessidade de renovação processual auxília a preparação e a composição do remanejamento dos quadros funcionais.</p>
+    <p class="lead cortexto recuo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum dolorem labore unde dolor amet, voluptatem vel quis ex quaerat natus eligendi iusto maxime aliquid..</p>
     <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div style="height: 300px;" class="text-center">
               <img src="img/sobre.jpg" alt="sobre1" style="height: 300px; max-width: 100%;">
-            </div>
-            <h3 class="cortexto text-center">"Titulo"</h3>
-            <p class="cortexto text-center">"Mensagem"</p>
-          </div>
-          <div class="col-md-6">
-            <div style="height: 300px;" class="text-center">
-              <img src="img/sobre.jpg" alt="sobre2" style="height: 300px; max-width: 100%;">
             </div>
             <h3 class="cortexto text-center">"Titulo"</h3>
             <p class="cortexto text-center">"Mensagem"</p>
@@ -147,7 +140,7 @@
 <!-- SECTION CONTATO -->
 
 <section id="secContato">
-    <h2 align="center">Contato</h1>
+    <h2 class="contact-title" align="center">Contato</h2>
     <form data-toggle="validator" role="form" id="myForm" name="myForm">
         <div class="form-group">
             <label for="inputName" class="control-label">Nome</label>
@@ -197,11 +190,10 @@
             <p>afn.engenharia@gmail.com</p>
         </div>
         <div>
-        </br></br>     
-        <p>Desenvolvido por 7Sight - 2018</p>
+            </br></br>     
+            <p>Desenvolvido por 7Sight - 2018</p>
         </div>        
     </div>
-    
 </footer>
 
 </body>
@@ -209,30 +201,6 @@
 
 
 <!-- SCRIPTS -->
-
-<script type="text/javascript">
-
-      // Menu-toggle button
-
-$(document).ready(function() {
-    $(".menu-icon").on("click", function() {
-        $("nav ul").toggleClass("showing");
-    	});
-    });
-
-      // Scrolling Effect
-
-    $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-            $('nav').addClass('black');
-        }
-
-	else {
-       $('nav').removeClass('black');
-        }
-    })
-</script>
-
 
 </body>
 </html>
