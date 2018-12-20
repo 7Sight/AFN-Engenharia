@@ -56,7 +56,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#secContato">CONTATOS</a>
+					<a class="nav-link" href="#secContato">CONTATO</a>
 				</li>
 
 			</ul>
@@ -120,28 +120,26 @@
 
 <!-- SECTION SOBRE -->
 
-<section class="imgbackground" id="sobreSite">
-  <div class="container">
-    <h2 class="py-4 text-center textbold cortexto">Sobre</h2>
-    <p class="lead cortexto recuo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum dolorem labore unde dolor amet, voluptatem vel quis ex quaerat natus eligendi iusto maxime aliquid..</p>
-    <div class="row">
-          <div class="col-md-12">
-            <div style="height: 300px;" class="text-center">
-              <img src="img/sobre.jpg" alt="sobre1" style="height: 300px; max-width: 100%;">
+<section id="sobreSite">
+    <div class="container">
+        <h2 class="py-4 text-center textbold cortexto">Sobre</h2>
+        <div class="row sobre">
+            <div class="col-md-6">
+                <img src="img/sobre.jpg" alt="sobre1" align="left" style="height: 300px; max-width: 100%;">
             </div>
-            <h3 class="cortexto text-center">"Titulo"</h3>
-            <p class="cortexto text-center">"Mensagem"</p>
-          </div>
+
+            <div class="col-md-6 txt" align="right">
+                <span class="cortexto recuo lead">Empresa de engenharia cívil fundada em 2017. Atua no segmento realizando obras de edificações, reformas, manutenções, consultoria e elaboração de projetos. Prezando pela qualidade e segurança do seu negócio. Construir o seu sonho é o nosso prazer.</span>
+            </div>
+        </div>
     </div>
-    <p class="lead cortexto recuo">Podemos já vislumbrar o modo pelo qual a necessidade de renovação processual auxília a preparação e a composição do remanejamento dos quadros funcionais. Podemos já vislumbrar o modo pelo qual a necessidade de renovação processual auxília a preparação e a composição do remanejamento dos quadros funcionais.</p>
-  </div>
 </section>
 
 <!-- SECTION CONTATO -->
 
 <section id="secContato">
     <h2 class="contact-title" align="center">Contato</h2>
-    <form data-toggle="validator" role="form" id="myForm" name="myForm">
+    <form class="formContato" data-toggle="validator" role="form" id="myForm" name="myForm">
         <div class="form-group">
             <label for="inputName" class="control-label">Nome</label>
             <input type="text" class="form-control" id="inputName" placeholder="Digite o seu nome" required>
@@ -168,7 +166,7 @@
             <div class="help-block with-errors"></div>
         </div>
 
-        <div id="btnConta">
+        <div class="btnContato" id="btnConta">
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>        
     </form>
@@ -177,21 +175,26 @@
 
 <footer id="rodape">
     <div class="flex-container">
-        <div>
+        <div class="rodape-footer">
             <h2>Telefone</h2>
-            <p>61 99132-5122</p>
+            <p>61 99270-6340<br>
+            61 98115-2912</p>
         </div>
-        <div> 
+        <div class="rodape-footer"> 
             <h2>Endereço</h2>
-            <p>America Central, Rua 14, bloco C</p>
+            <p>QR 306 CJ 10 CS 08 - Samambaia Sul<br>
+            Brasília/DF</p>
         </div>
-        <div>    
+        <div class="rodape-footer">    
             <h2>E-mail</h2>
             <p>afn.engenharia@gmail.com</p>
         </div>
-        <div>
-            </br></br>     
-            <p>Desenvolvido por 7Sight - 2018</p>
+        <div class="rodape-footer">
+            <ul class="rsociais-footer">
+                <li><a href="https://api.whatsapp.com/send?phone=5561992706340&text=Olá,%20tenho%20interesse%20em%20seu%20serviço!"><img class="rslogo" src="img/zap.png"></a></li>
+                <li><a href="https://www.instagram.com/afn.engenharia/"><img class="rslogo" src="img/insta.png"></a></li>
+                <li><a href="https://www.facebook.com/AFN.Engenharia/"><img class="rslogo" src="img/fb.png"></a></li>
+            </ul>
         </div>        
     </div>
 </footer>

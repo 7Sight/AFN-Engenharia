@@ -2,6 +2,9 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+h2 {
+  font-weight: bold;
+}
 
 /* NAVBAR RESPONSIVA */
 
@@ -31,13 +34,20 @@ body {
     margin: 10px;
 }
 
-@media(max-width: 990px){
+@media(max-width: 767px){
   .navbar.fixed-top.navbar-expand-lg.navbar-dark{
   background: rgb(255,255,255);
+  position: relative;
   }
 }
 
 /* SEÇÃO DE CONTATOS */
+
+.formContato{
+  padding-left: 50px;
+  padding-bottom: 15px;
+}
+
 #secContato{
       background: url(../img/contadosEdit.jpg) no-repeat fixed center;
       background-color: #2f5498;
@@ -74,6 +84,15 @@ body {
       .form-group{
             width: 100%;            
       }
+
+      .formContato{
+      padding-left: 0px;
+      padding-bottom: 15px;
+      }
+
+      .btnContato{
+      text-align: center; 
+      }
 }
 
 .contact-title {
@@ -100,7 +119,30 @@ body {
             flex-direction: column;            
             text-align: center;
           }
+
+      ul.rsociais-footer{
+      list-style: none;
+      display: inline-flex;
+      padding-top: 15px;
+      padding-left: 0px;
+}
 }    
+
+rodape-footer{
+  padding: 10px 10px 10px 10px;
+}
+
+ul.rsociais-footer{
+  list-style: none;
+  display: inline-flex;
+  padding-top: 30px;
+}
+
+.rslogo{
+  width: 50px;
+  height: 50px;
+  padding: 8px 8px 8px 8px;
+}
 /* FIM SEÇÃO DE RODAPE */
 
 /* CARROUSEL */
@@ -137,6 +179,13 @@ body {
   text-indent:3em;
 }
 
+.row.sobre{
+  text-align: justify;
+  padding-bottom: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .imgbackground{
 background-image: url(../img/sobre2.jpeg);
 background-repeat: no-repeat;
@@ -144,20 +193,26 @@ background-size: cover;
 }
 
 .cortexto{
-      color: white;
+      color: black;
 }
 
 .textbold{
       font-weight: bold;
 }
 
-.lead.cortexto.recuo{
-  padding-bottom: 20px;
-  margin: 0;
-  text-align: justify;
-}
-
 .py-4.text-center.textbold.cortexto{
   padding-top: 20px !important;
   padding-bottom: 5px !important;
+  font-size: 2rem;
+}
+
+.col-md-6.txt{
+  text-align: justify;
+}
+
+@media(max-width: 767px){
+  .col-md-6.txt{
+    text-align: justify;
+    padding-top: 15px;
+  }
 }
