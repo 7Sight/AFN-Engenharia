@@ -139,16 +139,16 @@
 
 <section id="secContato">
     <h2 class="contact-title" align="center">Contato</h2>
-    <form class="formContato" data-toggle="validator" role="form" id="myForm" name="myForm">
+    <form class="formContato" data-toggle="validator" role="form" id="myForm" name="myForm" method="POST" action="./email.php">
         <div class="form-group">
             <label for="inputName" class="control-label">Nome</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Digite o seu nome" required>
+            <input type="text" class="form-control" id="inputName" name="nome" placeholder="Digite o seu nome" required>
             <div class="help-block with-errors"></div>
         </div>
 
         <div class="form-group">
             <label for="inputEmail" class="control-label">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Digite o seu email" data-error="Digite um e-mail válido." required>
+            <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" placeholder="Digite o seu email" data-error="Digite um e-mail válido." required>
 
             <small id="emailHelp" class="form-text text-muted">*Nunca iremos compartilhar seu e-mail.</small>
             <div class="help-block with-errors"></div>
@@ -156,13 +156,13 @@
 
         <div class="form-group">
             <label for="inputFone" class="control-label">Telefone</label>
-            <input type="tel" class="form-control" id="inputFone" placeholder="Digite o seu telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" required onkeyup="mascara(this, mtel);">
+            <input type="tel" class="form-control" id="inputFone" name="telefone" placeholder="Digite o seu telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" required onkeyup="mascara(this, mtel);">
             <div class="help-block with-errors"></div>
         </div>
 
         <div class="form-group">
             <label for="Textarea1">Mensagem</label>
-            <textarea class="form-control" id="Textarea1" rows="3" placeholder="Digite aqui a sua mensagem"></textarea>
+            <textarea class="form-control" id="Textarea1" name="msg" rows="3" placeholder="Digite aqui a sua mensagem"></textarea>
             <div class="help-block with-errors"></div>
         </div>
 
