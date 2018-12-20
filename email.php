@@ -2,10 +2,10 @@
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
 
-$nome = addcslashes($_POST['nome']);
-$email = addcslashes($_POST['email']);
-$telefone = addcslashes($_POST['telefone']);
-$mensagem = addcslashes($_POST['msg']);
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$mensagem = $_POST['msg'];
 
 $to = "evaldojr11@gmail.com"; //alterar para o email de contato da AFN
 $subject = "Contato - AFN Engenharia";
