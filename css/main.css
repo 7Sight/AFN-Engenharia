@@ -2,10 +2,24 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-
+h2 {
+  font-weight: bold;
+}
 
 /* NAVBAR RESPONSIVA */
 
+.navbar.fixed-top.navbar-expand-lg.navbar-dark{
+  background: rgba(255,255,255,0.85);
+}
+
+.navbar-toggler-icon {
+    background: #30559bdb;
+    border-radius: 4px;
+}
+
+.navbar-toggler .collapsed{
+  background: lightblue;
+}
 .navbar-brand h1 mb-0 img {
 	width: 90px;
 	height: 80px;
@@ -18,21 +32,39 @@ body {
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 10px;
+		margin: 10px;
+    margin-left: 3px;
+}
+
+@media(max-width: 767px){
+  .navbar.fixed-top.navbar-expand-lg.navbar-dark{
+  background: rgb(255,255,255);
+  position: fixed;
+  }
+
+	.carousel.slide{
+		padding-top: 6.5em!important;
+	}
 }
 
 /* SEÇÃO DE CONTATOS */
+
+.formContato{
+  padding-left: 50px;
+  padding-bottom: 15px;
+}
+
 #secContato{
       background: url(../img/contadosEdit.jpg) no-repeat fixed center;
       background-color: #2f5498;
       background-size: cover;
       color: #fff;
       padding: 1%;
-      
+
 }
 
 #emailHelp{
-      color: #fff;
+      color: #fff!important;
 }
 
 .form-group{
@@ -54,10 +86,24 @@ body {
       padding-left: 5em;
 }
 
-@media(max-width: 900px){
+@media(max-width: 990px){
       .form-group{
-            width: 100%;            
+            width: 100%;
       }
+
+      .formContato{
+      padding-left: 5px;
+      padding-bottom: 15px;
+			padding-right: 5px;
+      }
+
+      .btnContato{
+      text-align: center;
+      }
+}
+
+.contact-title {
+  padding-top: 10px;
 }
 /* FIM SEÇÃO DE CONTATOS */
 
@@ -69,18 +115,45 @@ body {
       padding: 0.4%;
 }
 .flex-container {
-      display: flex;    
+      display: flex;
       flex-direction: row;
-      justify-content: space-around;    
-      text-align: center;      
+      justify-content: space-around;
+      text-align: center;
     }
 @media(max-width: 786px){
       .flex-container {
-            display: flex;    
-            flex-direction: column;            
+            display: flex;
+            flex-direction: column;
             text-align: center;
           }
-}    
+
+      ul.rsociais-footer{
+      list-style: none;
+      display: inline-flex;
+      padding-top: 15px;
+      padding-left: 0px;
+}
+}
+
+rodape-footer{
+  padding: 10px 10px 10px 10px;
+}
+
+ul.rsociais-footer{
+  list-style: none;
+  display: inline-flex;
+  padding-top: 30px;
+}
+
+.rslogo{
+  width: 50px;
+  height: 50px;
+  padding: 8px 8px 8px 8px;
+}
+
+.rodapeTitle{
+	padding-top: 15px;
+}
 /* FIM SEÇÃO DE RODAPE */
 
 /* CARROUSEL */
@@ -116,14 +189,41 @@ body {
 .recuo{
   text-indent:3em;
 }
+
+.row.sobre{
+  text-align: justify;
+  padding-bottom: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .imgbackground{
 background-image: url(../img/sobre2.jpeg);
 background-repeat: no-repeat;
 background-size: cover;
 }
+
 .cortexto{
-      color: white;
+      color: black;
 }
+
 .textbold{
       font-weight: bold;
+}
+
+.py-4.text-center.textbold.cortexto{
+  padding-top: 20px !important;
+  padding-bottom: 5px !important;
+  font-size: 2rem;
+}
+
+.col-md-6.txt{
+  text-align: justify;
+}
+
+@media(max-width: 767px){
+  .col-md-6.txt{
+    text-align: justify;
+    padding-top: 15px;
+  }
 }
